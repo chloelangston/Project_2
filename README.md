@@ -7,7 +7,8 @@
 
 ![Alt text](http://i.imgur.com/E7IkcgC.png)
 ![Alt text](http://i.imgur.com/UwEVTYJ.png)
-![Alt text](http://i.imgur.com/N7tgu5M.png)
+![Alt text](http://i.imgur.com/GWp8qDP.png)
+![Alt text](http://i.imgur.com/XJ2perT.png)
 ![Alt text](http://i.imgur.com/cos7KkW.png)
 
 
