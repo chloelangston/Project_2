@@ -5,7 +5,7 @@
 -matching system for people to enter in their life and get matched with a shelter dog with the right traits<br /> 
 
 
-![Alt text](http://i.imgur.com/S5eTFOM.png)
+![Alt text](http://i.imgur.com/E7IkcgC.png)
 ![Alt text](http://i.imgur.com/UwEVTYJ.png)
 ![Alt text](http://i.imgur.com/N7tgu5M.png)
 ![Alt text](http://i.imgur.com/cos7KkW.png)
