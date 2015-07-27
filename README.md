@@ -17,5 +17,7 @@
 
 <br /> <br /> 
 ###User stories
--as a shelter coordinator, i want it to be clear on the homepage where to add an animal profile<br /> 
--as a user, i want it to be really easy to use the matching feature without having to sign in
+-as a shelter coordinator, i want to be able to log in and see a list of all my dog profiles<br /> 
+-as a shelter coordinator, i want it to be clear on my homepage where to add a new animal profile<br /> 
+-as someone looking to adopt a dog, i want it to be be able to use the matching feature immediately without having to sign in<br />
+-as someone looking to adopt a dog, i want there to be a clear way to contact the shelter after i've been match with a dog
