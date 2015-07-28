@@ -1,0 +1,16 @@
+<p>
+  <strong>Name:</strong>
+  Name: <%= @dog.name %>
+  Size: <%= @dog.size %>
+  Age: <%= @dog.age %>
+  Left alone? <%= @dog.left_alone %>
+  Housetrained? <%= @dog.housetrained %>
+  Needs another dog?<%= @dog.needs_another_dog %>
+  OK with kids? <%= @dog.kids %>
+  Activity level: <%= @dog.activity %>
+  Needs a yard? <%= @dog.yard %>
+
+</p>
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> |
+<%= link_to 'Back', dogs_path %>

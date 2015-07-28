@@ -1,0 +1,45 @@
+<form class="pure-form pure-form-stacked" action="index.html" method="post">
+
+
+<%= form_for @dog do |f| %>
+
+<div class="field">
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</div>
+<div class="field">
+  <%= f.label :size %>
+  <%= f.text_field :size %>
+</div>
+<div class="field">
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+</div>
+<div class="field">
+  <%= f.label :Can_be_left_alone_for_long_periods_of_time? %>
+  <%= f.text_field :left_alone %>
+</div>
+<div class="field">
+  <%= f.label :housetrained %>
+  <%= f.text_field :housetrained %>
+</div>
+<div class="field">
+  <%= f.label :needs_another_dog %>
+  <%= f.text_field :needs_another_dog %>
+</div>
+<div class="field">
+  <%= f.label :kids %>
+  <%= f.text_field :kids %>
+</div>
+<div class="field">
+  <%= f.label :activity %>
+  <%= f.text_field :activity %>
+</div>
+<div class="field">
+  <%= f.label :yard %>
+  <%= f.text_field :yard %>
+</div>
+<div class="actions" value="Create"><%= f.submit %></div>
+<% end %>
+
+</form>
