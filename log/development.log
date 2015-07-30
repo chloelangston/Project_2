@@ -30925,3 +30925,382 @@ Processing by DogsController#index as HTML
   Rendered dogs/index.html.erb within layouts/application (8.9ms)
   [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
 Completed 200 OK in 758ms (Views: 755.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:25:23 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1483ms (Views: 1480.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:25:58 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.9ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (13.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 362ms (Views: 359.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:30:04 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.9ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (38.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 645ms (Views: 633.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:30:21 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (8.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 187ms (Views: 185.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:30:46 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (7.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 226ms (Views: 224.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:35:01 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (49.6ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 659ms (Views: 649.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:35:32 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (7.4ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 306ms (Views: 304.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:35:49 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (8.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 406ms (Views: 403.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:36:11 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (19.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 319ms (Views: 316.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:52:44 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.4ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (38.8ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 777ms (Views: 766.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 10:58:04 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (36.2ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 776ms (Views: 761.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:01:19 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (22.6ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 282ms (Views: 272.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:01:32 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (7.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 192ms (Views: 191.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:02:17 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.2ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (23.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 603ms (Views: 594.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:02:24 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.4ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (11.2ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 217ms (Views: 215.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:03:35 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (7.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 558ms (Views: 556.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:12:14 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.2ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (33.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 1174ms (Views: 1162.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:12:25 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.4ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (9.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 184ms (Views: 180.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-30 11:16:17 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.4ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (24.8ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 634ms (Views: 624.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=1&left_alone=1&housetrained=1&needs_another_dog=1&kids=1&activity=1&yard=1&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:16:32 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"1", "left_alone"=>"1", "housetrained"=>"1", "needs_another_dog"=>"1", "kids"=>"1", "activity"=>"1", "yard"=>"1", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "1"], ["left_alone", "1"], ["housetrained", "1"], ["needs_another_dog", "1"], ["kids", "1"], ["activity", "1"], ["yard", "1"]]
+  Rendered dogs/index.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 448ms (Views: 445.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:17:18 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.9ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (11.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 600ms (Views: 597.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=1&left_alone=1&housetrained=1&needs_another_dog=1&kids=1&activity=1&yard=1&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:17:37 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"1", "left_alone"=>"1", "housetrained"=>"1", "needs_another_dog"=>"1", "kids"=>"1", "activity"=>"1", "yard"=>"1", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "1"], ["left_alone", "1"], ["housetrained", "1"], ["needs_another_dog", "1"], ["kids", "1"], ["activity", "1"], ["yard", "1"]]
+  Rendered dogs/index.html.erb within layouts/application (21.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 325ms (Views: 323.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=1&left_alone=1&housetrained=1&needs_another_dog=1&kids=1&activity=1&yard=1&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:25:47 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"1", "left_alone"=>"1", "housetrained"=>"1", "needs_another_dog"=>"1", "kids"=>"1", "activity"=>"1", "yard"=>"1", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (1.0ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "1"], ["left_alone", "1"], ["housetrained", "1"], ["needs_another_dog", "1"], ["kids", "1"], ["activity", "1"], ["yard", "1"]]
+  Rendered dogs/index.html.erb within layouts/application (35.3ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 488ms (Views: 475.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=1&left_alone=1&housetrained=1&needs_another_dog=1&kids=1&activity=1&yard=1&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:30:50 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"1", "left_alone"=>"1", "housetrained"=>"1", "needs_another_dog"=>"1", "kids"=>"1", "activity"=>"1", "yard"=>"1", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.8ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "1"], ["left_alone", "1"], ["housetrained", "1"], ["needs_another_dog", "1"], ["kids", "1"], ["activity", "1"], ["yard", "1"]]
+  Rendered dogs/index.html.erb within layouts/application (35.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 916ms (Views: 904.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=%7B%3Aname%3D%3E%22medium%22%2C+%3Avalue%3D%3E%22medium%22%7D&left_alone=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&housetrained=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&needs_another_dog=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&kids=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&activity=%7B%3Aname%3D%3E%22low%22%2C+%3Avalue%3D%3E%22low%22%7D&yard=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:31:22 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"{:name=>\"medium\", :value=>\"medium\"}", "left_alone"=>"{:name=>\"yes\", :value=>\"yes\"}", "housetrained"=>"{:name=>\"yes\", :value=>\"yes\"}", "needs_another_dog"=>"{:name=>\"no\", :value=>\"no\"}", "kids"=>"{:name=>\"yes\", :value=>\"yes\"}", "activity"=>"{:name=>\"low\", :value=>\"low\"}", "yard"=>"{:name=>\"no\", :value=>\"no\"}", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "{:name=>\"medium\", :value=>\"medium\"}"], ["left_alone", "{:name=>\"yes\", :value=>\"yes\"}"], ["housetrained", "{:name=>\"yes\", :value=>\"yes\"}"], ["needs_another_dog", "{:name=>\"no\", :value=>\"no\"}"], ["kids", "{:name=>\"yes\", :value=>\"yes\"}"], ["activity", "{:name=>\"low\", :value=>\"low\"}"], ["yard", "{:name=>\"no\", :value=>\"no\"}"]]
+  Rendered dogs/index.html.erb within layouts/application (4.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 314ms (Views: 310.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=%7B%3Aname%3D%3E%22medium%22%2C+%3Avalue%3D%3E%22medium%22%7D&left_alone=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&housetrained=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&needs_another_dog=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&kids=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&activity=%7B%3Aname%3D%3E%22low%22%2C+%3Avalue%3D%3E%22low%22%7D&yard=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:32:06 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"{:name=>\"medium\", :value=>\"medium\"}", "left_alone"=>"{:name=>\"yes\", :value=>\"yes\"}", "housetrained"=>"{:name=>\"yes\", :value=>\"yes\"}", "needs_another_dog"=>"{:name=>\"no\", :value=>\"no\"}", "kids"=>"{:name=>\"yes\", :value=>\"yes\"}", "activity"=>"{:name=>\"low\", :value=>\"low\"}", "yard"=>"{:name=>\"no\", :value=>\"no\"}", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "{:name=>\"medium\", :value=>\"medium\"}"], ["left_alone", "{:name=>\"yes\", :value=>\"yes\"}"], ["housetrained", "{:name=>\"yes\", :value=>\"yes\"}"], ["needs_another_dog", "{:name=>\"no\", :value=>\"no\"}"], ["kids", "{:name=>\"yes\", :value=>\"yes\"}"], ["activity", "{:name=>\"low\", :value=>\"low\"}"], ["yard", "{:name=>\"no\", :value=>\"no\"}"]]
+  Rendered dogs/index.html.erb within layouts/application (6.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 506ms (Views: 504.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:34:05 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (1.2ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (17.7ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 980ms (Views: 970.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=%7B%3Aname%3D%3E%22medium%22%2C+%3Avalue%3D%3E%22medium%22%7D&left_alone=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&housetrained=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&needs_another_dog=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&kids=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&activity=%7B%3Aname%3D%3E%22low%22%2C+%3Avalue%3D%3E%22low%22%7D&yard=%7B%3Aname%3D%3E%22no%22%2C+%3Avalue%3D%3E%22no%22%7D&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:34:23 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"{:name=>\"medium\", :value=>\"medium\"}", "left_alone"=>"{:name=>\"yes\", :value=>\"yes\"}", "housetrained"=>"{:name=>\"yes\", :value=>\"yes\"}", "needs_another_dog"=>"{:name=>\"no\", :value=>\"no\"}", "kids"=>"{:name=>\"yes\", :value=>\"yes\"}", "activity"=>"{:name=>\"low\", :value=>\"low\"}", "yard"=>"{:name=>\"no\", :value=>\"no\"}", "commit"=>"Find my dog!"}
+  [1m[36mDog Load (0.2ms)[0m  [1mSELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?[0m  [["size", "{:name=>\"medium\", :value=>\"medium\"}"], ["left_alone", "{:name=>\"yes\", :value=>\"yes\"}"], ["housetrained", "{:name=>\"yes\", :value=>\"yes\"}"], ["needs_another_dog", "{:name=>\"no\", :value=>\"no\"}"], ["kids", "{:name=>\"yes\", :value=>\"yes\"}"], ["activity", "{:name=>\"low\", :value=>\"low\"}"], ["yard", "{:name=>\"no\", :value=>\"no\"}"]]
+  Rendered dogs/index.html.erb within layouts/application (5.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 524ms (Views: 521.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:34:59 -0700
+Processing by DogsController#index as HTML
+  [1m[36mDog Load (0.3ms)[0m  [1mSELECT "dogs".* FROM "dogs"[0m
+  Rendered dogs/index.html.erb within layouts/application (47.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 658ms (Views: 656.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dogs/15" for ::1 at 2015-07-30 11:44:05 -0700
+Processing by DogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mDog Load (12.9ms)[0m  [1mSELECT  "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT 1[0m  [["id", 15]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered dogs/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 409ms (Views: 375.7ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/users/1" for ::1 at 2015-07-30 11:44:14 -0700
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mDog Load (13.1ms)[0m  SELECT "dogs".* FROM "dogs" WHERE "dogs"."user_id" = ?  [["user_id", 1]]
+  Rendered users/show.html.erb within layouts/application (22.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 352ms (Views: 223.3ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/dogs/15" for ::1 at 2015-07-30 11:44:16 -0700
+Processing by DogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mDog Load (8.4ms)[0m  SELECT  "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dogs/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 242ms (Views: 230.3ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/dogs/15" for ::1 at 2015-07-30 11:44:17 -0700
+Processing by DogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mDog Load (0.5ms)[0m  SELECT  "dogs".* FROM "dogs" WHERE "dogs"."id" = ? LIMIT 1  [["id", 15]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered dogs/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 314ms (Views: 311.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:44:17 -0700
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (0.5ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (13.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 220ms (Views: 218.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:44:17 -0700
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (0.5ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (6.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 321ms (Views: 318.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:44:56 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (11.9ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (20.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 574ms (Views: 560.9ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:45:14 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (0.3ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 156ms (Views: 154.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=%7B%3Aname%3D%3E%22small%22%2C+%3Avalue%3D%3E%22small%22%7D&left_alone=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:46:17 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"{:name=>\"small\", :value=>\"small\"}", "left_alone"=>"{:name=>\"yes\", :value=>\"yes\"}", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (64.5ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (71.1ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1711ms (Views: 1644.6ms | ActiveRecord: 65.6ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=%7B%3Aname%3D%3E%22small%22%2C+%3Avalue%3D%3E%22small%22%7D&left_alone=%7B%3Aname%3D%3E%22yes%22%2C+%3Avalue%3D%3E%22yes%22%7D&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:49:46 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"{:name=>\"small\", :value=>\"small\"}", "left_alone"=>"{:name=>\"yes\", :value=>\"yes\"}", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (14.1ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (41.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 442ms (Views: 403.0ms | ActiveRecord: 14.4ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:49:58 -0700
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (29.5ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (43.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 680ms (Views: 648.6ms | ActiveRecord: 29.6ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=medium&left_alone=yes&housetrained=yes&needs_another_dog=no&kids=yes&activity=low&yard=no&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:51:05 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"medium", "left_alone"=>"yes", "housetrained"=>"yes", "needs_another_dog"=>"no", "kids"=>"yes", "activity"=>"low", "yard"=>"no", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (44.4ms)[0m  SELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?  [["size", "medium"], ["left_alone", "yes"], ["housetrained", "yes"], ["needs_another_dog", "no"], ["kids", "yes"], ["activity", "low"], ["yard", "no"]]
+  Rendered dogs/index.html.erb within layouts/application (51.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 1292ms (Views: 1244.9ms | ActiveRecord: 44.6ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:52:49 -0700
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (21.2ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (49.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 751ms (Views: 721.5ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=small&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:52:54 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"small", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (0.4ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (23.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 225ms (Views: 222.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dogs" for ::1 at 2015-07-30 11:54:17 -0700
+Processing by DogsController#index as HTML
+  [1m[35mDog Load (29.3ms)[0m  SELECT "dogs".* FROM "dogs"
+  Rendered dogs/index.html.erb within layouts/application (38.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 700ms (Views: 669.1ms | ActiveRecord: 29.5ms)
+
+
+Started GET "/dogs?utf8=%E2%9C%93&size=medium&left_alone=yes&housetrained=yes&needs_another_dog=no&kids=yes&activity=low&yard=no&commit=Find+my+dog%21" for ::1 at 2015-07-30 11:54:30 -0700
+Processing by DogsController#index as HTML
+  Parameters: {"utf8"=>"✓", "size"=>"medium", "left_alone"=>"yes", "housetrained"=>"yes", "needs_another_dog"=>"no", "kids"=>"yes", "activity"=>"low", "yard"=>"no", "commit"=>"Find my dog!"}
+  [1m[35mDog Load (0.2ms)[0m  SELECT "dogs".* FROM "dogs" WHERE "dogs"."size" = ? AND "dogs"."left_alone" = ? AND "dogs"."housetrained" = ? AND "dogs"."needs_another_dog" = ? AND "dogs"."kids" = ? AND "dogs"."activity" = ? AND "dogs"."yard" = ?  [["size", "medium"], ["left_alone", "yes"], ["housetrained", "yes"], ["needs_another_dog", "no"], ["kids", "yes"], ["activity", "low"], ["yard", "no"]]
+  Rendered dogs/index.html.erb within layouts/application (4.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 182ms (Views: 178.9ms | ActiveRecord: 0.4ms)
