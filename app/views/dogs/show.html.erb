@@ -1,16 +1,20 @@
-<p>
-  <strong>Name:</strong>
-  Name: <%= @dog.name %>
-  Size: <%= @dog.size %>
-  Age: <%= @dog.age %>
-  Left alone? <%= @dog.left_alone %>
-  Housetrained? <%= @dog.housetrained %>
-  Needs another dog?<%= @dog.needs_another_dog %>
-  OK with kids? <%= @dog.kids %>
-  Activity level: <%= @dog.activity %>
-  Needs a yard? <%= @dog.yard %>
 
-</p>
 
-<%= link_to 'Edit', edit_dog_path(@dog) %> |
-<%= link_to 'Back', dogs_path %>
+<ul>
+  <strong class="dog_name">Name: <%= @dog.name %></strong>
+  <li>Size: <%= @dog.size %></li>
+  <li>Age: <%= @dog.age %></li>
+  <li>Left alone? <%= @dog.left_alone %></li>
+  <li>Housetrained? <%= @dog.housetrained %></li>
+  <li>Needs another dog?<%= @dog.needs_another_dog %></li>
+  <li>OK with kids? <%= @dog.kids %></li>
+  <li>Activity level: <%= @dog.activity %></li>
+  <li>Needs a yard? <%= @dog.yard %></li>
+  <li>Photo: <%= @dog.url %></li>
+  <li>Shelter: <%= @dog.user.shelter_name %></li>
+
+</ul>
+
+
+<%= link_to 'Edit', edit_dog_path(@dog) %>
+<%= link_to 'Back', user_path(@user) %>

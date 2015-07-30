@@ -1,10 +1,20 @@
 class DogsController < ApplicationController
+
   def index
-    @dogs = Dog.all
+
+    if params[:size].present? && params[:left_alone].present? && params[:housetrained].present? && params[:needs_another_dog].present? && params[:kids].present? && params[:activity].present? && params[:yard].present?
+      @dogs = Dog.where(size: params[:size], left_alone: params[:left_alone], housetrained: params[:housetrained], needs_another_dog: params[:needs_another_dog], kids: params[:kids], activity: params[:activity], yard: params[:yard])
+
+    else
+      @dogs = Dog.all
+    end
   end
 
   def show
     @dog = Dog.find(params[:id])
+    @dog.user = current_user
+    @user = @dog.user
+
   end
 
   def new
@@ -16,23 +26,34 @@ class DogsController < ApplicationController
   end
 
   def create
+    # params[:user_id] = current_user.id
     @dog = Dog.create(dog_params)
+    @dog.user = current_user
+    if @dog.save
+      redirect_to @dog, notice: "dog was successfully created."
+    else
+      render :new
+    end
   end
 
   def update
     @dog = Dog.find(params[:id])
     if @dog.update(dog_params)
-      redirect_to @dog
+      redirect_to dog_path
     else
       render :edit
     end
   end
 
   def destroy
+    @dog = Dog.find(params[:id])
+    @dog.destroy
+    redirect_to dogs_path
   end
 
   private
+
   def dog_params
-    params.require(:dog).permit(:name, :age, :left_alone, :housetrained, :needs_another_dog, :kids, :activity, :yard)
+    params.require(:dog).permit(:name, :age, :size, :left_alone, :housetrained, :needs_another_dog, :kids, :activity, :yard, :url)
   end
 end

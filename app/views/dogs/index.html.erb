@@ -1,4 +1,205 @@
-<h1>Listing Dogs</h1>
+<h1 class= "questionnaire">Questionnaire</h1>
+
+
+<div class= "questions">
+  <div class= "question1">
+    <h3>What size dog do you want?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :size %>
+      </div>Small
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :size %>
+      </div>Medium
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio3">
+        <%= radio_button_tag 'inlineRadioOptions', :size %>
+      </div>Large
+    </label>
+  </div>
+
+  <div class= "question2">
+    <h3>Are you gone most of the day?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :left_alone %>
+      </div>Yes
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :left_alone %>
+      </div>No
+    </label>
+  </div>
+
+  <div class= "question3">
+    <h3>Do you need a dog that is already housetrained?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :housetrained %>
+      </div>Yes
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :housetrained %>
+      </div>No
+    </label>
+  </div>
+
+  <div class= "question4">
+    <h3>Do you already have a dog or can you adopt 2?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :needs_another_dog %>
+      </div>Yes
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :needs_another_dog %>
+      </div>No
+    </label>
+  </div>
+
+  <div class= "question5">
+    <h3>Do you have small kids?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :kids %>
+      </div>Yes
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :kids %>
+      </div>No
+    </label>
+  </div>
+
+  <div class= "question6">
+    <h3>How active are you?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :activity %>
+      </div>Low
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :activity %>
+      </div>Medium
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio3">
+        <%= radio_button_tag 'inlineRadioOptions', :activity %>
+      </div>High
+    </label>
+  </div>
+
+  <div class= "question7">
+    <h3>Do you have a yard?</h3>
+    <label class="radio-inline">
+      <div id="inlineRadio1">
+        <%= radio_button_tag 'inlineRadioOptions', :yard %>
+      </div>Yes
+    </label>
+    <label class="radio-inline">
+      <div id="inlineRadio2">
+        <%= radio_button_tag 'inlineRadioOptions', :yard %>
+      </div>No
+    </label>
+  </div>
+
+
+
+</div>
+
+
+
+<div class= 'form-horizontal'>
+<%= form_tag(dogs_path, {method: "get"}) do %>
+
+  <%= label_tag(:size) %>
+  <%= radio_button_tag(:size, 'small') %>
+
+
+
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:Are_you_gone_most_of_the_day?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:left_alone) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:Do_you_need_a_dog_that_is_already_housetrained?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:housetrained) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:Do_you_already_have_a_dog_or_can_you_adopt_two?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:needs_another_dog) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:Do_you_have_small_kids?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:kids) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:How_active_are_you?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:activity) %>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-2 control-label">
+      <%= label_tag(:Do_you_have_a_yard?) %>
+    </div>
+    <div class="col-sm-3">
+      <div class="form-control">
+        <%= text_field_tag(:yard) %>
+      </div>
+    </div>
+  </div>
+
+  <div class= "form-group">
+    <div class="col-sm-offset-2 col-sm-3">
+      <div class="actions btn btn-default"><%= submit_tag "Find my dog!" %></div>
+    </div>
+  </div>
+<% end %>
+</div>
+
+
 
 <table>
   <thead>
@@ -10,18 +211,7 @@
 
   <tbody>
     <% @dogs.each do |dog| %>
-    <div class="row">
-  <div class="col-sm-6 col-md-3">
-    <div class="thumbnail">
-      <img src="photos/rusty.jpg" alt="this is a dog">
-      <div class="caption">
-        <h3><%= dog.name %></h3>
-        <p>This is <%= dog.name %>'s profile</p>
-        <p><%= link_to 'Show', dog, class: "btn btn-primary"%> <%= link_to 'Edit', edit_dog_path(dog), class: "btn btn-default" %><%= link_to 'Destroy', dog, class: "btn btn-default", method: :delete, data: { confirm: 'Are you sure?' } %></p>
-      </div>
-    </div>
-  </div>
-</div>
+
       <tr>
         <td><%= dog.name %></td>
         <td><%= link_to 'Show', dog %></td>
@@ -31,7 +221,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Dog', new_dog_path %>

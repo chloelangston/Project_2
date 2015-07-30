@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>V4RoutesAndControllers</title>
+  <title>PasswordExample</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 </head>
 <body>
-
+<% flash.each do |name, message| %>
+     <div class="flash-message flash-message-<%= name %>">
+    <%= message %>
+   </div>
+<% end %>
+<% if current_user %>
+  <p>Hello, <%= current_user.email %></p>
+  <%= link_to 'Logout', session_path(session), method: :delete, class: "btn btn-default" %>
+  <%= link_to 'My Dogs', user_path(current_user), class: "btn btn-default" %>
+<%else%>
+  <%= link_to "Login for Shelter Admins", new_session_path, class: "btn btn-default" %>
+<%end%>
 <%= yield %>
 
 </body>

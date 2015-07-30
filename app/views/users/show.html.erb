@@ -1,0 +1,21 @@
+<h1><%= @user.email %>'s Dogs!</h1>
+
+<h4>Shelter Name: <%= @user.shelter_name %></h4>
+<h2>dog profiles:</h2>
+
+<div class= "all_dogs">
+  <% @dogs.each do |d| %>
+    <div class= "dog_list">
+      <div class="dog_name"><%= link_to d.name, dog_path(d.id) %></div>
+      <%= link_to 'edit', edit_dog_path(d.id) %>
+      <%= link_to 'delete', @dog, :method => :delete, :confirm => 'Are you sure?' %>
+    </div>
+  <% end %>
+</div>
+
+<div class="new_dog">
+  <%= link_to 'New Dog', new_dog_path, class: "btn btn-default" %>
+</div>
+
+<%= link_to 'edit profile', edit_user_path %>
+<%= link_to 'Back', users_path %>

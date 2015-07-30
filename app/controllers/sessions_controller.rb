@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
   def new
+    
   end
 
   def create
@@ -7,7 +8,8 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
 
-      redirect_to root_path, notice: "logged in!"
+      # redirect_to dogs_path, notice: "logged in!"
+      redirect_to user_path(user.id), notice: "logged in!"
     else
       flash.now.alert = "invalid login credentials"
       render 'new'
