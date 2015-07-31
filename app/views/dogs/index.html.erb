@@ -1,4 +1,4 @@
-
+<div class= "page">
 <div class= "questions">
   <h1 class= "questionnaire">Questionnaire</h1>
   <%= form_tag(dogs_path, {method: "get"}) do %>
@@ -128,11 +128,10 @@
       </label>
     </div>
 
-  <%= submit_tag "Find my dog!" %>
+  <%= submit_tag 'find your dog' %>
 
-  </div>
+  <% end %>
 
-<% end %>
 
 
 <!-- <div class= 'form-horizontal'>
@@ -218,16 +217,19 @@
 <% end %>
 </div> -->
 
+<div class= "index">
+  <% @dogs.each do |d| %>
+    <div class= "">
+      <div class=""><h3>This is <%= link_to d.name, dog_path(d.id) %>!</h3></div>
+      <%= image_tag d.url, class: "image" %>
+      <h5>He's at <%= d.user.shelter_name %>!  Contact them <%= link_to 'Here', user_path(d.user) %></h5>
+    </div>
+  <% end %>
+</div>
+</div>
+</div>
 
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
+<!-- <table>
   <tbody>
     <% @dogs.each do |dog| %>
 
@@ -239,4 +241,4 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table> -->

@@ -6,13 +6,13 @@ class DogsController < ApplicationController
       @dogs = Dog.where(size: params[:size], left_alone: params[:left_alone], housetrained: params[:housetrained], needs_another_dog: params[:needs_another_dog], kids: params[:kids], activity: params[:activity], yard: params[:yard])
 
     else
-      @dogs = Dog.all
+      @dogs = []
     end
+
   end
 
   def show
     @dog = Dog.find(params[:id])
-    @dog.user = current_user
     @user = @dog.user
 
   end

@@ -16,3 +16,27 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .top {
+   background-color: #66CCFF;
+   padding: 20px;
+   width: 100%;
+ }
+
+ .document {
+   margin: 40px;
+ }
+
+ .top_buttons {
+   position: relative;
+   display: inline;
+   margin-left: 300px;
+   float: right;
+ }
+
+ .top_hello {
+   position: relative;
+   display: inline;
+   margin: 20px;
+   width: 200px;
+ }
