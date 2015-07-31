@@ -1,233 +1,263 @@
 <div class= "page">
-<div class= "questions">
-  <h1 class= "questionnaire">Questionnaire</h1>
+
+  <div id= "index">
+    <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your dog match is:</h4>
+      </div>
+      <div class="modal-body">
+        <% @dogs.each do |d| %>
+          <div class= "">
+            <div class=""><h3><%= link_to d.name, dog_path(d.id) %>!</h3></div>
+            <%= image_tag d.url, class: "image" %>
+            <h5><%= d.blurb %></h5>
+            <h5>He's at <%= d.user.shelter_name %>!  Contact them <%= link_to 'Here', user_path(d.user) %></h5>
+          </div>
+        <% end %>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+  <div class= "questions">
+    <h1 class= "questionnaire">Questionnaire</h1>
+    <%= form_tag(dogs_path, {method: "get"}) do %>
+
+
+      <div class= "question" role="group">
+        <h3>What size dog do you want?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :size, "small" %>
+            <%= label_tag :size, "small" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :size, "medium" %>
+            <%= label_tag :size, "medium" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox3">
+            <%= check_box_tag :size, "large" %>
+            <%= label_tag :size, "large" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question" role="group">
+        <h3>Are you gone most of the day?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :left_alone, "yes" %>
+            <%= label_tag :left_alone, "yes" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :left_alone, "no" %>
+            <%= label_tag :left_alone, "no" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question">
+        <h3>Do you need a dog that is already housetrained?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :housetrained, "yes" %>
+            <%= label_tag :housetrained, "yes" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :housetrained, "no" %>
+            <%= label_tag :housetrained, "no" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question">
+        <h3>Do you already have a dog or can you adopt 2?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :needs_another_dog, "yes" %>
+            <%= label_tag :needs_another_dog, "yes" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :needs_another_dog, "no" %>
+            <%= label_tag :needs_another_dog, "no" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question">
+        <h3>Do you have small kids?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :kids, "yes" %>
+            <%= label_tag :kids, "yes" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :kids, "no" %>
+            <%= label_tag :kids, "no" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question">
+        <h3>How active are you?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :activity, "low" %>
+            <%= label_tag :activity, "low" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :activity, "medium" %>
+            <%= label_tag :activity, "medium" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox3">
+            <%= check_box_tag :activity, "high" %>
+            <%= label_tag :activity, "high" %>
+          </div>
+        </label>
+      </div>
+
+      <div class= "question">
+        <h3>Do you have a yard?</h3>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox1">
+            <%= check_box_tag :yard, "yes" %>
+            <%= label_tag :yard, "yes" %>
+          </div>
+        </label>
+        <label class="checkbox-inline">
+          <div id="inlineCheckbox2">
+            <%= check_box_tag :yard, "no" %>
+            <%= label_tag :yard, "no" %>
+          </div>
+        </label>
+      </div>
+
+    <%= submit_tag 'Find my dog!', class: "btn btn-default button1" %>
+    <% end %>
+  </div>
+
+
+  <!-- <div class= 'form-horizontal'>
   <%= form_tag(dogs_path, {method: "get"}) do %>
 
+    <%= label_tag(:size) %>
+    <%= text_field_tag(:size) %>
 
-    <div class= "question1" role="group">
-      <h3>What size dog do you want?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :size, "small" %>
-          <%= label_tag :size, "small" %>
+
+
+
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:Are_you_gone_most_of_the_day?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:left_alone) %>
         </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :size, "medium" %>
-          <%= label_tag :size, "medium" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox3">
-          <%= check_box_tag :size, "large" %>
-          <%= label_tag :size, "large" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question2" role="group">
-      <h3>Are you gone most of the day?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :left_alone, "yes" %>
-          <%= label_tag :left_alone, "yes" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :left_alone, "no" %>
-          <%= label_tag :left_alone, "no" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question3">
-      <h3>Do you need a dog that is already housetrained?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :housetrained, "yes" %>
-          <%= label_tag :housetrained, "yes" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :housetrained, "no" %>
-          <%= label_tag :housetrained, "no" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question4">
-      <h3>Do you already have a dog or can you adopt 2?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :needs_another_dog, "yes" %>
-          <%= label_tag :needs_another_dog, "yes" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :needs_another_dog, "no" %>
-          <%= label_tag :needs_another_dog, "no" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question5">
-      <h3>Do you have small kids?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :kids, "yes" %>
-          <%= label_tag :kids, "yes" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :kids, "no" %>
-          <%= label_tag :kids, "no" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question6">
-      <h3>How active are you?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :activity, "low" %>
-          <%= label_tag :activity, "low" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :activity, "medium" %>
-          <%= label_tag :activity, "medium" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox3">
-          <%= check_box_tag :activity, "high" %>
-          <%= label_tag :activity, "high" %>
-        </div>
-      </label>
-    </div>
-
-    <div class= "question7">
-      <h3>Do you have a yard?</h3>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox1">
-          <%= check_box_tag :yard, "yes" %>
-          <%= label_tag :yard, "yes" %>
-        </div>
-      </label>
-      <label class="checkbox-inline">
-        <div id="inlineCheckbox2">
-          <%= check_box_tag :yard, "no" %>
-          <%= label_tag :yard, "no" %>
-        </div>
-      </label>
-    </div>
-
-  <%= submit_tag 'find your dog' %>
-
-  <% end %>
-
-
-
-<!-- <div class= 'form-horizontal'>
-<%= form_tag(dogs_path, {method: "get"}) do %>
-
-  <%= label_tag(:size) %>
-  <%= text_field_tag(:size) %>
-
-
-
-
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:Are_you_gone_most_of_the_day?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:left_alone) %>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:Do_you_need_a_dog_that_is_already_housetrained?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:housetrained) %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:Do_you_need_a_dog_that_is_already_housetrained?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:housetrained) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:Do_you_already_have_a_dog_or_can_you_adopt_two?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:needs_another_dog) %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:Do_you_already_have_a_dog_or_can_you_adopt_two?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:needs_another_dog) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:Do_you_have_small_kids?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:kids) %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:Do_you_have_small_kids?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:kids) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:How_active_are_you?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:activity) %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:How_active_are_you?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:activity) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <div class="col-sm-2 control-label">
-      <%= label_tag(:Do_you_have_a_yard?) %>
-    </div>
-    <div class="col-sm-3">
-      <div class="form-control">
-        <%= text_field_tag(:yard) %>
+    <div class="form-group">
+      <div class="col-sm-2 control-label">
+        <%= label_tag(:Do_you_have_a_yard?) %>
+      </div>
+      <div class="col-sm-3">
+        <div class="form-control">
+          <%= text_field_tag(:yard) %>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class= "form-group">
-    <div class="col-sm-offset-2 col-sm-3">
-      <div class="actions btn btn-default"><%= submit_tag "Find my dog!" %></div>
-    </div>
-  </div>
-<% end %>
-</div> -->
-
-<div class= "index">
-  <% @dogs.each do |d| %>
-    <div class= "">
-      <div class=""><h3>This is <%= link_to d.name, dog_path(d.id) %>!</h3></div>
-      <%= image_tag d.url, class: "image" %>
-      <h5>He's at <%= d.user.shelter_name %>!  Contact them <%= link_to 'Here', user_path(d.user) %></h5>
+    <div class= "form-group">
+      <div class="col-sm-offset-2 col-sm-3">
+        <div class="actions btn btn-default"><%= submit_tag "Find my dog!" %></div>
+      </div>
     </div>
   <% end %>
-</div>
-</div>
-</div>
+  </div> -->
+
+
 
 <!-- <table>
   <tbody>
@@ -242,3 +272,14 @@
     <% end %>
   </tbody>
 </table> -->
+
+<script type="text/javascript">
+  $(function(){
+    //var url = window.location.href;
+    // var hasParam = window.location.href.indexOf('');
+    if(window.location.href.indexOf("commit") > -1) {
+      $('#myModal').modal('show');
+    }
+  })
+
+</script>

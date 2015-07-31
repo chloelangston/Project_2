@@ -1,44 +1,48 @@
 <%= form_for @dog, class: "pure-form pure-form-stacked" do |f| %>
 
-<div class="field">
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-</div>
-<div class="field">
-  <%= f.label :size %>
-  <%= f.text_field :size %>
-</div>
-<div class="field">
-  <%= f.label :age %>
-  <%= f.text_field :age %>
-</div>
-<div class="field">
-  <%= f.label :Can_be_left_alone_for_long_periods_of_time? %>
-  <%= f.text_field :left_alone %>
-</div>
-<div class="field">
-  <%= f.label :housetrained %>
-  <%= f.text_field :housetrained %>
-</div>
-<div class="field">
-  <%= f.label :needs_another_dog %>
-  <%= f.text_field :needs_another_dog %>
-</div>
-<div class="field">
-  <%= f.label :kids %>
-  <%= f.text_field :kids %>
-</div>
-<div class="field">
-  <%= f.label :activity %>
-  <%= f.text_field :activity %>
-</div>
-<div class="field">
-  <%= f.label :yard %>
-  <%= f.text_field :yard %>
-</div>
-<div class="field">
-  <%= f.label :url %>
-  <%= f.text_field :url %>
-</div>
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :Can_be_left_alone_for_long_periods_of_time? %>
+    <%= f.text_field :left_alone %>
+  </div>
+  <div class="field">
+    <%= f.label :housetrained %>
+    <%= f.text_field :housetrained %>
+  </div>
+  <div class="field">
+    <%= f.label :needs_another_dog %>
+    <%= f.text_field :needs_another_dog %>
+  </div>
+  <div class="field">
+    <%= f.label :kids %>
+    <%= f.text_field :kids %>
+  </div>
+  <div class="field">
+    <%= f.label :activity %>
+    <%= f.text_field :activity %>
+  </div>
+  <div class="field">
+    <%= f.label :yard %>
+    <%= f.text_field :yard %>
+  </div>
+  <div class="field">
+    <%= f.label :url %>
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :blurb_about_the_dog %>
+    <%= f.text_field :blurb %>
+  </div>
 <div class="actions" value="Create"><%= f.submit %></div>
 <% end %>

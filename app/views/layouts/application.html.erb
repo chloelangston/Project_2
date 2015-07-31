@@ -6,6 +6,7 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div class= "top">
@@ -16,7 +17,8 @@
         <%= link_to 'My Dogs', user_path(current_user), class: "btn btn-default" %>
       </div>
     <%else%>
-      <%= link_to "Login for Shelter Admins", new_session_path, class: "btn btn-default" %> Or
+      <%= link_to "Login for Shelter Admins", new_session_path, class: "btn btn-default" %>
+      <p class="or">OR</p>
       <%= link_to "Add New Shelter", new_user_path, class: "btn btn-default" %>
     <%end%>
   </div>

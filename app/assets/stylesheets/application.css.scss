@@ -18,10 +18,19 @@
  @import "bootstrap";
 
  .top {
-   background-color: #66CCFF;
+   background-color: #63D1F4;
    padding: 20px;
    width: 100%;
  }
+
+.or {
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
  .document {
    margin: 40px;
@@ -39,4 +48,8 @@
    display: inline;
    margin: 20px;
    width: 200px;
+ }
+
+ body {
+   font-family: 'Raleway', sans-serif;
  }

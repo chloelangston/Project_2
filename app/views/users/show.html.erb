@@ -1,9 +1,8 @@
 
   <h1><%= @user.shelter_name %></h1>
-  <div class="new_dog">
-    <%= link_to 'New Dog', new_dog_path, class: "btn btn-default" %>
-  </div>
-  <h3>My Dog Profiles:</h3>
+  <h5><%= @user.address %></h5>
+  <h5><%= @user.phone %></h5>
+  <div class= "profile_new_dog"><h3 class= "my_dog_profiles">My Dog Profiles:</h3><%= link_to 'New Dog', new_dog_path, class: "button_new_dog btn btn-info" %></div>
   <div class= "all_dogs">
   <% @dogs.each do |d| %>
     <div class= "dog_list">

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150728193418) do
+ActiveRecord::Schema.define(version: 20150731035121) do
 
   create_table "dogs", force: :cascade do |t|
     t.string   "name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20150728193418) do
     t.datetime "updated_at",        null: false
     t.text     "url"
     t.integer  "user_id"
+    t.text     "blurb"
   end
 
   add_index "dogs", ["user_id"], name: "index_dogs_on_user_id"
@@ -37,6 +38,8 @@ ActiveRecord::Schema.define(version: 20150728193418) do
     t.string   "shelter_name"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+    t.text     "address"
+    t.text     "phone"
   end
 
 end
