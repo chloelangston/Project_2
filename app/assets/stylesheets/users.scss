@@ -32,17 +32,18 @@
 }
 
 .image {
+  position: relative;
   padding: 10px;
   width: 150px;
   height: 150px;
+  border-radius: 30%;
 }
 
 .dog_name {
-  width: 70px;
   font-size: 24px;
-  text-align: center;
   position: relative;
-  margin-left: 30%;
+  text-align: center;
+
 }
 
 .new_dog {
